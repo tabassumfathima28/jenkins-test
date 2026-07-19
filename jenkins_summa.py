@@ -23,10 +23,7 @@ def security_tasks():
 
     tasks = [
         "Learn Jenkins",
-        "Learn Git & GitHub",
-        "Build CI/CD Pipeline",
-        
-    ]
+        ]
 
     for i, task in enumerate(tasks, start=1):
         print(f"{i}. {task}")
