@@ -38,9 +38,9 @@ def security_tasks():
 def summary():
     print("\nPipeline Status")
     print("-" * 20)
-    print("✔ Repository cloned successfully")
-    print("✔ Python script executed")
-    print("✔ Jenkins build completed successfully")
+    print(" Repository cloned successfully")
+    print(" Python script executed")
+    print(" Jenkins build completed successfully")
 
 
 if __name__ == "__main__":
@@ -49,4 +49,4 @@ if __name__ == "__main__":
     security_tasks()
     summary()
 
-    print("\n🎉 Hello from Jenkins! Your first pipeline works.")
+    print("\n Hello from Jenkins! Your first pipeline works.")
