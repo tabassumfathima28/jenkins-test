@@ -25,10 +25,7 @@ def security_tasks():
         "Learn Jenkins",
         "Learn Git & GitHub",
         "Build CI/CD Pipeline",
-        "Learn Docker",
-        "Learn Terraform",
-        "Learn Ansible",
-        "Deploy to AWS"
+        
     ]
 
     for i, task in enumerate(tasks, start=1):
