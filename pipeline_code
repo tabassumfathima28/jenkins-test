@@ -1,0 +1,27 @@
+pipeline{
+    agent any
+     
+    stages{
+          stage('git clone'){
+            steps{
+             git branch: 'main', credentialsId: 'tabu_github_credentials', url: 'https://github.com/tabassumfathima28/jenkins-test.git'
+            }
+        }
+        stage('test'){
+            steps{
+                bat 'python -m pytest'
+            }
+        }
+        stage('compile'){
+            steps{
+                bat 'python -m compileall . '
+            }
+        }
+          stage('execute'){
+            steps{
+                bat 'python jenkins_summa.py '
+            }
+        }
+    }
+    
+}
